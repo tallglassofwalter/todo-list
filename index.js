@@ -55,6 +55,7 @@ function renderTodo() {
     cancelBtn.setAttribute('type', 'button');
     cancelBtn.innerHTML = 'Cancel';
     cancelBtn.addEventListener('click', cancelTodo);
+
     editForm.appendChild(cancelBtn);
 
     newTodo.appendChild(editForm);
@@ -84,7 +85,6 @@ function deleteTodo(e) {
 }
 
 function editTodo(e) {
-  console.log('efit', e.target.parentElement)
   let el = e.target.parentElement.children;
   [...el].forEach((el) => el.classList.toggle('hidden'));
 }

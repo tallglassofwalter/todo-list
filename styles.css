@@ -2,6 +2,12 @@ body {
   text-align: center;
 }
 
+.todo {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .todo__checked {
   text-decoration: line-through;
 }
